@@ -17,16 +17,16 @@ const C = {
 };
 
 const GROUP_LABELS = {
-  CG: '對照組（可樂固定 $2.00、百事自由）',
-  TG1: '衝擊組 +5%（可樂漲到 $2.10）',
-  TG2: '衝擊組 +10%（可樂漲到 $2.20）',
-  TG3: '衝擊組 +20%（可樂漲到 $2.40）',
-  SYM: '對稱競價（兩家都自由）',
-  PEP12: '2022 重現（百事 +12% = $2.24）',
-  BF: '純參數基線（兩家固定 $2.00）',
-  BF5: '純參數 +5%',
-  BF10: '純參數 +10%',
-  BF20: '純參數 +20%',
+  CG: '對照組：可樂固定 $2.00、百事自由（LLM AI）',
+  TG1: '衝擊組：可樂 +5%（$2.10）、百事自由（LLM AI）',
+  TG2: '衝擊組：可樂 +10%（$2.20）、百事自由（LLM AI）',
+  TG3: '衝擊組：可樂 +20%（$2.40）、百事自由（LLM AI）',
+  SYM: '對稱競價：兩家都自由（LLM AI）',
+  PEP12: '2022 重現：百事 +12%（$2.24）、可樂固定 $2.00',
+  BF: '純參數基線：可樂、百事都固定 $2.00（無 AI）',
+  BF5: '純參數：可樂 +5%（$2.10）、百事固定 $2.00',
+  BF10: '純參數：可樂 +10%（$2.20）、百事固定 $2.00',
+  BF20: '純參數：可樂 +20%（$2.40）、百事固定 $2.00',
 };
 
 export default function App() {
@@ -185,7 +185,7 @@ export default function App() {
         padding: '10px 18px', background: C.panel2, borderTop: `1px solid ${C.line}`,
         flexShrink: 0,
       }}>
-        {run ? <InfoPanel meta={meta} daily={daily} day={day} /> : <p>載入中…</p>}
+        {run ? <InfoPanel meta={meta} daily={daily} day={day} group={group} /> : <p>載入中…</p>}
       </div>
     </div>
   );
@@ -201,7 +201,7 @@ const btnStyle = {
 };
 btnStyle[':hover'] = { borderColor: C.gold };
 
-function InfoPanel({ meta, daily, day }) {
+function InfoPanel({ meta, daily, day, group }) {
   if (!daily) return <p>無資料</p>;
   const fmt = (x) => (x === null || x === undefined || Number.isNaN(x) ? '—' : Number(x).toFixed(2));
   const Row = ({ k, v, strong }) => (
@@ -226,6 +226,15 @@ function InfoPanel({ meta, daily, day }) {
       }}>
         📊 第 {day} 天市場狀態
       </h3>
+      {GROUP_LABELS[group] && (
+        <div style={{
+          fontSize: 12, color: C.ink2, background: C.panel,
+          border: `1px solid ${C.line2}`, borderRadius: 6,
+          padding: '6px 10px', marginBottom: 10,
+        }}>
+          🔬 <b>{group}</b>：{GROUP_LABELS[group]}
+        </div>
+      )}
       <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
         <Card title="🥤 可口可樂" color={C.coke}>
           <Row k="售價" v={`$${fmt(daily.price_coke)}`} strong />
