@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+.env
+logs/
+.venv/
+beverage-ui/node_modules/
+beverage-ui/dist/

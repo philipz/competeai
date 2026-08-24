@@ -1,0 +1,62 @@
+# BeverageTown experiment configuration — Coke vs Pepsi duopoly.
+# Consumer parameters are CALIBRATED by calibrate_beverage.py; values below are
+# initial guesses that get overwritten by the calibrated parameter file.
+
+backends:
+  default_backend: &default_backend_anchor
+    temperature: 0.7
+    max_tokens: 1024
+    model: deepseek-chat
+    backend_type: deepseek-chat
+
+market:
+  base_price: 2.00
+  base_quality: 0.70
+  start_capital: 10000.0
+  daily_fixed_cost: 200.0
+  recipe_cost_per_01: 0.05
+  base_unit_cost: 0.40
+
+brands:
+  CocaCola:
+    role_desc: >-
+      你是可口可樂（Coca-Cola）的品牌總裁。可口可樂是全球最具知名度的碳酸飲料品牌，
+      擁有深厚的品牌忠誠度與歷史。你的目標是守住市場領導地位，在面對百事可樂的競爭時
+      維持利潤與市占率。你注重品牌形象與產品品質的長期經營。
+  PepsiCo:
+    role_desc: >-
+      你是百事可樂（PepsiCo）的品牌總裁。百事可樂是可口可樂最主要的競爭對手，
+      擅長進攻性行銷與價格策略，目標是從可口可樂手中奪取市場占有率。你注重成本效益
+      與靈活的市場反應，隨時準備抓住對手的失誤。
+
+consumers:
+  n_consumers: 100
+  solo_ratio: 0.30
+  income_min: 5000.0
+  income_max: 15000.0
+  # price sensitivity scale: alpha_i = alpha_scale / income_i
+  # CALIBRATED (calibrate_beverage.py): PED=-2.01, XED=+0.66, optout=30%
+  alpha_scale: 31000.0
+  beta_mean: 5.0
+  beta_sd: 3.0
+  gamma_q: 3.0
+  gamma_a: 0.8
+  gumbel_scale: 2.0
+  explore_prob: 0.1493
+  group_size_values: [2, 3, 4]
+  group_size_probs: [0.30, 0.40, 0.30]
+  sat_w_q: 6.0
+  sat_w_p: 3.0
+  sat_noise: 0.4
+  sat_q_anchor: 0.70
+  group_rule: majority_explore
+
+experiment:
+  consumer_counts: [100, 200, 300]
+  weeks: [2, 4, 6]
+  groups: [CG, TG1, TG2, TG3, SYM, PEP12]
+  # pure-parametric control groups (zero LLM): clean XED / external-validity baselines
+  control_groups: [BF, BF5, BF10, BF20]
+  seeds: [0, 1, 2, 3, 4]
+  baseline_days: 4
+  log_root: logs/coke_pepsi

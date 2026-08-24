@@ -13,6 +13,7 @@ from .cohere import CohereAIChat
 from .human import Human
 from .hf_transformers import TransformersConversational
 from .anthropic import Claude
+from .deepseek import DeepSeekChat
 
 ALL_BACKENDS = [
     Human,
@@ -20,6 +21,7 @@ ALL_BACKENDS = [
     CohereAIChat,
     TransformersConversational,
     Claude,
+    DeepSeekChat,
 ]
 
 BACKEND_REGISTRY = {backend.type_name: backend for backend in ALL_BACKENDS}
