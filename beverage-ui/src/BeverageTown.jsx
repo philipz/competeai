@@ -132,7 +132,7 @@ function drawPixelMan(g, cx, footY, T, opts) {
 }
 
 // ── 主元件：圖片背景 + 上層 canvas 的 pixel man ─────────────────────────
-export default function BeverageTown({ run, day }) {
+export default function BeverageTown({ run, day, isMobile }) {
   const canvasRef = useRef(null);
   const wrapRef = useRef(null);
   const stateRef = useRef([]);
@@ -145,27 +145,35 @@ export default function BeverageTown({ run, day }) {
   const [display, setDisplay] = useState({ w: W, h: H });
 
   // ResizeObserver：依容器尺寸算等比顯示尺寸（量測包住自己的容器）
+  // 手機（isMobile）：以寬度為主，高度自動（100% 寬）
+  // 桌機：寬高都受限於容器，等比縮放填滿
   useEffect(() => {
     const wrap = wrapRef.current;
     if (!wrap) return;
     const ratio = W / H;
-    // 找最接近的定位容器 = 主畫面容器（BeverageTown 的 parent）
     const host = wrap.parentElement;
     if (!host) return;
+
     const compute = () => {
-      // 量測 host 的內容區（不含 padding）
-      const hs = getComputedStyle(host);
-      const pw = host.clientWidth - parseFloat(hs.paddingLeft || 0) - parseFloat(hs.paddingRight || 0);
-      const ph = host.clientHeight - parseFloat(hs.paddingTop || 0) - parseFloat(hs.paddingBottom || 0);
-      let w = pw, h = pw / ratio;
-      if (h > ph) { h = ph; w = ph * ratio; }
-      setDisplay({ w: Math.max(1, Math.round(w)), h: Math.max(1, Math.round(h)) });
+      const rect = host.getBoundingClientRect();
+      const pw = Math.max(50, rect.width);
+      const ph = Math.max(50, rect.height);
+      if (isMobile) {
+        // 手機：寬度優先，佔滿可用寬
+        setDisplay({ w: Math.round(pw), h: Math.round(pw / ratio) });
+      } else {
+        // 桌機：等比縮放到容納得下的最大尺寸
+        let w = pw, h = pw / ratio;
+        if (h > ph) { h = ph; w = ph * ratio; }
+        setDisplay({ w: Math.round(w), h: Math.round(h) });
+      }
     };
     compute();
     const ro = new ResizeObserver(compute);
     ro.observe(host);
-    return () => ro.disconnect();
-  }, []);
+    window.addEventListener('resize', compute);
+    return () => { ro.disconnect(); window.removeEventListener('resize', compute); };
+  }, [isMobile]);
 
   useEffect(() => {
     if (!run) { stateRef.current = []; return; }

@@ -16,6 +16,22 @@ const C = {
   ui: '"PingFang TC","Source Han Sans TC","Noto Sans CJK TC","Microsoft JhengHei",sans-serif',
 };
 
+// RWD：手機斷點（<768px 視為手機）
+const MOBILE_BP = '(max-width: 768px)';
+function useMediaQuery(query) {
+  const [matches, setMatches] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia(query).matches,
+  );
+  useEffect(() => {
+    const mq = window.matchMedia(query);
+    const handler = () => setMatches(mq.matches);
+    mq.addEventListener('change', handler);
+    setMatches(mq.matches);
+    return () => mq.removeEventListener('change', handler);
+  }, [query]);
+  return matches;
+}
+
 const GROUP_LABELS = {
   CG: '對照組：可樂固定 $2.00、百事自由（LLM AI）',
   TG1: '衝擊組：可樂 +5%（$2.10）、百事自由（LLM AI）',
@@ -28,8 +44,15 @@ const GROUP_LABELS = {
   BF10: '純參數：可樂 +10%（$2.20）、百事固定 $2.00',
   BF20: '純參數：可樂 +20%（$2.40）、百事固定 $2.00',
 };
+// 手機版短標籤（選單用）
+const GROUP_SHORT = {
+  CG: 'CG 對照組', TG1: 'TG1 +5%', TG2: 'TG2 +10%', TG3: 'TG3 +20%',
+  SYM: 'SYM 對稱', PEP12: 'PEP12 百事+12%',
+  BF: 'BF 基線', BF5: 'BF5 可樂+5%', BF10: 'BF10 可樂+10%', BF20: 'BF20 可樂+20%',
+};
 
 export default function App() {
+  const isMobile = useMediaQuery(MOBILE_BP);
   const [index, setIndex] = useState(null);
   const [group, setGroup] = useState('TG2');
   const [cell, setCell] = useState('n200_w4');
@@ -108,58 +131,77 @@ export default function App() {
   return (
     <div style={{
       display: 'flex', flexDirection: 'column',
-      height: '100vh', overflow: 'hidden',
+      // 手機：minHeight + 自然捲動（畫布+面板一屏放不下，允許往下捲）
+      // 桌機：固定 100vh 不捲動
+      height: isMobile ? 'auto' : '100vh',
+      minHeight: isMobile ? '100dvh' : undefined,
+      overflow: isMobile ? 'visible' : 'hidden',
       background: C.bg, color: C.ink, fontFamily: C.ui,
     }}>
-      {/* 標題（單行，不換行） */}
+      {/* 標題（單行；手機上縮小字體） */}
       <header style={{
-        padding: '8px 18px', background: C.panel, borderBottom: `1px solid ${C.line2}`,
+        padding: isMobile ? '6px 10px' : '8px 18px',
+        background: C.panel, borderBottom: `1px solid ${C.line2}`,
         textAlign: 'center', whiteSpace: 'nowrap', overflow: 'hidden',
       }}>
-        <span style={{ fontSize: 20, color: C.gold, fontFamily: C.disp, letterSpacing: '.04em', fontWeight: 700 }}>
+        <span style={{
+          fontSize: isMobile ? 15 : 20, color: C.gold, fontFamily: C.disp,
+          letterSpacing: '.04em', fontWeight: 700,
+        }}>
           🥤 飲料鎮 BeverageTown 重放
         </span>
-        <span style={{ fontSize: 12.5, color: C.ink2, marginLeft: 14 }}>
-          可口可樂 vs 百事可樂 · 競價模擬實驗
-        </span>
+        {!isMobile && (
+          <span style={{ fontSize: 12.5, color: C.ink2, marginLeft: 14 }}>
+            可口可樂 vs 百事可樂 · 競價模擬實驗
+          </span>
+        )}
       </header>
 
-      {/* 控制列：所有選單與按鈕 */}
+      {/* 控制列：所有選單與按鈕（手機上更緊湊、可換行） */}
       <div style={{
-        padding: '8px 18px', background: C.panel2, borderBottom: `1px solid ${C.line}`,
-        display: 'flex', gap: '14px', alignItems: 'center', flexWrap: 'wrap',
+        padding: isMobile ? '6px 10px' : '8px 18px',
+        background: C.panel2, borderBottom: `1px solid ${C.line}`,
+        display: 'flex', gap: isMobile ? '6px 8px' : '14px',
+        alignItems: 'center', flexWrap: 'wrap',
         justifyContent: 'center',
       }}>
-        <label style={{ fontSize: 13, display: 'flex', alignItems: 'center', gap: 5 }}>
+        <label style={{ fontSize: isMobile ? 12 : 13, display: 'flex', alignItems: 'center', gap: 4 }}>
           實驗組{' '}
           <select value={group} onChange={(e) => setGroup(e.target.value)}
-            style={selectStyle}>
+            style={{ ...selectStyle, maxWidth: isMobile ? 130 : 'none' }}>
             {groups.map((g) => (
-              <option key={g} value={g}>{g} — {GROUP_LABELS[g] || g}</option>
+              <option key={g} value={g}>
+                {isMobile ? `${g} — ${GROUP_SHORT[g] || g}` : `${g} — ${GROUP_LABELS[g] || g}`}
+              </option>
             ))}
           </select>
         </label>
-        <label style={{ fontSize: 13, display: 'flex', alignItems: 'center', gap: 5 }}>
+        <label style={{ fontSize: isMobile ? 12 : 13, display: 'flex', alignItems: 'center', gap: 4 }}>
           情境{' '}
           <select value={cell} onChange={(e) => setCell(e.target.value)}
-            style={selectStyle}>
+            style={{ ...selectStyle, maxWidth: isMobile ? 110 : 'none' }}>
             {cells.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
         </label>
-        <label style={{ fontSize: 13, display: 'flex', alignItems: 'center', gap: 5 }}>
+        <label style={{ fontSize: isMobile ? 12 : 13, display: 'flex', alignItems: 'center', gap: 4 }}>
           Seed{' '}
           <select value={seed} onChange={(e) => setSeed(Number(e.target.value))}
-            style={selectStyle}>
+            style={{ ...selectStyle, maxWidth: isMobile ? 70 : 'none' }}>
             {seeds.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
         </label>
 
-        <button onClick={() => setPlaying((p) => !p)} style={btnStyle}>
+        <button onClick={() => setPlaying((p) => !p)} style={{ ...btnStyle, fontSize: isMobile ? 12 : 13 }}>
           {playing ? '⏸ 暫停' : '▶ 播放'}
         </button>
-        <button onClick={() => setDay(1)} style={btnStyle}>⏮ 第一天</button>
+        <button onClick={() => setDay(1)} style={{ ...btnStyle, fontSize: isMobile ? 12 : 13 }}>
+          ⏮ 第一天
+        </button>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6, minWidth: 240 }}>
+        <div style={{
+          display: 'flex', alignItems: 'center', gap: 6,
+          minWidth: isMobile ? 120 : 240, flex: isMobile ? '1 1 100%' : '0 0 auto',
+        }}>
           <span style={{ fontSize: 12, color: C.ink2 }}>
             Day {day} / {meta?.n_days ?? '—'}
           </span>
@@ -171,21 +213,24 @@ export default function App() {
         </div>
       </div>
 
-      {/* 主畫面：填滿剩餘空間（overflow hidden 防止畫布溢出） */}
+      {/* 主畫面：填滿剩餘空間（手機上高度由畫布比例決定） */}
       <div style={{
-        flex: 1, minHeight: 0, padding: '10px 12px', display: 'flex',
-        justifyContent: 'center', alignItems: 'center',
+        flex: isMobile ? '0 0 auto' : 1,
+        minHeight: isMobile ? 0 : 0,
+        padding: isMobile ? '6px' : '10px 12px',
+        display: 'flex', justifyContent: 'center', alignItems: 'center',
         overflow: 'hidden',
       }}>
-        <BeverageTown run={run} day={day} playing={playing} />
+        <BeverageTown run={run} day={day} playing={playing} isMobile={isMobile} />
       </div>
 
-      {/* 資訊面板：固定高度，置於主畫面下方 */}
+      {/* 資訊面板：置於主畫面下方（手機上自然高度、頁面捲動） */}
       <div style={{
-        padding: '10px 18px', background: C.panel2, borderTop: `1px solid ${C.line}`,
+        padding: isMobile ? '8px 10px' : '10px 18px',
+        background: C.panel2, borderTop: `1px solid ${C.line}`,
         flexShrink: 0,
       }}>
-        {run ? <InfoPanel meta={meta} daily={daily} day={day} group={group} /> : <p>載入中…</p>}
+        {run ? <InfoPanel meta={meta} daily={daily} day={day} group={group} isMobile={isMobile} /> : <p>載入中…</p>}
       </div>
     </div>
   );
@@ -201,7 +246,7 @@ const btnStyle = {
 };
 btnStyle[':hover'] = { borderColor: C.gold };
 
-function InfoPanel({ meta, daily, day, group }) {
+function InfoPanel({ meta, daily, day, group, isMobile }) {
   if (!daily) return <p>無資料</p>;
   const fmt = (x) => (x === null || x === undefined || Number.isNaN(x) ? '—' : Number(x).toFixed(2));
   const Row = ({ k, v, strong }) => (
@@ -212,8 +257,9 @@ function InfoPanel({ meta, daily, day, group }) {
   );
   const Card = ({ title, color, children }) => (
     <div style={{
-      flex: 1, minWidth: 200, background: C.panel, border: `1px solid ${C.line2}`,
-      borderRadius: 8, padding: '12px 14px',
+      flex: isMobile ? '1 1 100%' : 1, minWidth: isMobile ? 0 : 200,
+      background: C.panel, border: `1px solid ${C.line2}`,
+      borderRadius: 8, padding: isMobile ? '10px 12px' : '12px 14px',
     }}>
       <h4 style={{ margin: '0 0 8px', color, fontSize: 14, fontFamily: C.disp }}>{title}</h4>
       {children}
@@ -222,20 +268,23 @@ function InfoPanel({ meta, daily, day, group }) {
   return (
     <div style={{ maxWidth: 1200, margin: '0 auto' }}>
       <h3 style={{
-        margin: '0 0 10px', fontSize: 15, color: C.gold, fontFamily: C.disp,
+        margin: '0 0 10px', fontSize: isMobile ? 14 : 15, color: C.gold, fontFamily: C.disp,
       }}>
         📊 第 {day} 天市場狀態
       </h3>
       {GROUP_LABELS[group] && (
         <div style={{
-          fontSize: 12, color: C.ink2, background: C.panel,
+          fontSize: isMobile ? 11.5 : 12, color: C.ink2, background: C.panel,
           border: `1px solid ${C.line2}`, borderRadius: 6,
-          padding: '6px 10px', marginBottom: 10,
+          padding: '5px 10px', marginBottom: 10,
         }}>
           🔬 <b>{group}</b>：{GROUP_LABELS[group]}
         </div>
       )}
-      <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+      <div style={{
+        display: 'flex', gap: '12px', flexWrap: 'wrap',
+        flexDirection: isMobile ? 'column' : 'row',
+      }}>
         <Card title="🥤 可口可樂" color={C.coke}>
           <Row k="售價" v={`$${fmt(daily.price_coke)}`} strong />
           <Row k="品質" v={fmt(daily.quality_coke)} />
