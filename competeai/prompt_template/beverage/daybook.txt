@@ -1,0 +1,12 @@
+今天是第 <INPUT 0> 天。
+
+## 你的昨日經營日報
+<INPUT 1>
+
+## 昨日市場情報
+<INPUT 2>
+
+## 昨日消費者評論
+<INPUT 3>
+
+請根據以上情報，分析目前的競爭態勢，然後做出今天的決策。記住：請先簡短分析，再輸出一個純 JSON 物件（包含 price、marketing_budget、recipe_change、slogan 四個欄位），不要使用 markdown 程式碼區塊。
