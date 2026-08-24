@@ -1,0 +1,16 @@
+beverage-ui/src/App.jsx
+  h_1b119f25eaf333 19-34,47-52,55,134-138,141,143-144,147-150,153-157,160,162-165,168,171,173-175,179,182,186,189,194,197-199,201-204,216,218-221,224,227,229-230,233,249,260-262,271,277,279,284-287
+beverage-ui/src/BeverageTown.jsx
+  h_1b119f25eaf333 135,148-149,156,158-169,174-176
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "8d311465d9359edd710c6897b451e2dedc84fecf",
+  "prompts": {},
+  "humans": {
+    "h_1b119f25eaf333": {
+      "author": "philipz <philipzheng@gmail.com>"
+    }
+  }
+}
