@@ -1,10 +1,10 @@
 # BeverageTown 重放檢視器（beverage-ui）
 
-**插畫風小鎮重放**：以 `beverage_town.jpeg` 為畫布背景（粉彩暖色小鎮插畫），上層疊加 **truman 風格的程式化 pixel man**（16×16 單位格 fillRect 組合畫出小人，含走路動畫、面向、地面陰影）。直接讀取 `logs/coke_pepsi/` 的模擬資料（經 `prepare_ui_data.py` 預處理），完全離線運作。
+**插畫風小鎮重放**：以 `beverage_town.jpg` 為畫布背景（粉彩暖色小鎮插畫），上層疊加 **truman 風格的程式化 pixel man**（16×16 單位格 fillRect 組合畫出小人，含走路動畫、面向、地面陰影）。直接讀取 `logs/coke_pepsi/` 的模擬資料（經 `prepare_ui_data.py` 預處理），完全離線運作。
 
 ## 功能
 
-- 🖼️ 以 `beverage_town.jpeg` 為背景，pixel man 疊加其上
+- 🖼️ 以 `beverage_town.jpg` 為背景，pixel man 疊加其上
 - 🧍 **pixel man 消費者**：單人（隨機髮色/衣色）與群體（同群同色），每天依模擬資料走動到所選品牌（可樂店/百事店/廣場），有走路動畫與面向
 - 🏷️ 叠在圖片上的商店招牌：🥤 可口可樂、🧃 百事可樂、廣場（不購買）
 - ⏯️ 播放 / 暫停 / 第一天 / 時間軸拖曳（Day 1–N）
@@ -44,15 +44,18 @@ beverage-ui/public/data/
 ## 技術棧
 
 - Vite + React 18（純前端，無後端）
-- 背景：`beverage_town.jpeg`（css cover）→ `public/beverage_town.jpg`
+- 背景：`public/beverage_town.jpg`（由原始圖縮放優化的 Web 版，css cover 顯示）
 - 前景：**原生 Canvas 2D** 渲染 pixel man（fillRect 組合，同 truman 手法；無 WebGL 依賴，輕量快速）
 - 資料全部為靜態 JSON（public/data）
+
+> 想換背景圖：把新圖存成 `public/beverage_town.jpg`，並調整 `src/BeverageTown.jsx` 中的
+> `COKE_POS` / `PEPSI_POS` / `PLAZA_POS` 三個虛擬座標，讓商店招牌對齊圖片上的位置。
 
 ## 視覺來源
 
 | 來源 | 用途 |
 | :--- | :--- |
-| `beverage_town.jpeg` | 畫布背景（粉彩暖色小鎮插畫） |
+| `beverage_town.jpg` | 畫布背景（粉彩暖色小鎮插畫） |
 | truman（`drawFigure`） | pixel man 畫法：頭/瀏海/眼/身/腰帶/腳 + 走路 4-frame 動畫 |
 | 圖片萃取色票 | UI：天藍 `#8ac8e1`、米杏 `#c1ab94`、奶油 `#f9e9d0`、酒紅 `#60232b` |
 
