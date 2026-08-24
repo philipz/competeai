@@ -1,0 +1,20 @@
+beverage-ui/README.md
+  h_1b119f25eaf333 3,7,47,51-53,58
+beverage-ui/package.json
+  h_1b119f25eaf333 7-9
+beverage-ui/src/App.jsx
+  h_1b119f25eaf333 4
+beverage-ui/src/BeverageTown.jsx
+  h_1b119f25eaf333 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "59b0338bd37cac8328a51c2de4c9c3c172a32d43",
+  "prompts": {},
+  "humans": {
+    "h_1b119f25eaf333": {
+      "author": "philipz <philipzheng@gmail.com>"
+    }
+  }
+}
