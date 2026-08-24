@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import BeverageTown from './BeverageTown.jsx';
 
-// 從 beverage_town.jpeg 萃取的粉彩暖色票
+// 從 beverage_town.jpg 萃取的粉彩暖色票
 const C = {
   bg: '#c1ab94',          // 米杏街道
   panel: '#f9e9d0',       // 奶油

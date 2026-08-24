@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-// ── 飲料鎮：以 beverage_town.jpeg 為背景 + truman 風格 pixel man 疊加 ──
+// ── 飲料鎮：以 beverage_town.jpg 為背景 + truman 風格 pixel man 疊加 ──
 // 背景直接使用圖片（css cover），pixel man 在上層 canvas。
 // 色票從圖片萃取：天藍天空 #8ac8e1、米杏街道 #c1ab94、奶油 #f9e9d0、酒紅 #60232b
 
