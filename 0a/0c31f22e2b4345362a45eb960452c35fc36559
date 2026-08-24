@@ -1,0 +1,1020 @@
+.gitignore
+  h_1b119f25eaf333 3-7
+analysis_beverage.py
+  h_1b119f25eaf333 1-388
+beverage-ui/README.md
+  h_1b119f25eaf333 1-63
+beverage-ui/index.html
+  h_1b119f25eaf333 1-17
+beverage-ui/package-lock.json
+  h_1b119f25eaf333 1-916
+beverage-ui/package.json
+  h_1b119f25eaf333 1-21
+beverage-ui/public/data/BF/n100_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n100_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n200_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF/n300_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n100_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n200_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF10/n300_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n100_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n200_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF20/n300_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n100_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n200_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/BF5/n300_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w4_sum/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w4_sum/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w4_sum/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w4_sum/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w4_sum/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n100_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n200_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/CG/n300_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w4_sum/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w4_sum/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w4_sum/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w4_sum/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w4_sum/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n100_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n200_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/PEP12/n300_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w4_sum/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w4_sum/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w4_sum/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w4_sum/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w4_sum/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n100_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n200_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/SYM/n300_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w4_sum/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w4_sum/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w4_sum/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w4_sum/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w4_sum/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n100_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n200_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG1/n300_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w4_sum/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w4_sum/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w4_sum/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w4_sum/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w4_sum/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n100_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n200_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG2/n300_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w4_sum/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w4_sum/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w4_sum/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w4_sum/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w4_sum/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n100_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n200_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w2/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w2/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w2/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w2/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w2/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w4/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w4/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w4/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w4/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w4/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w6/seed0.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w6/seed1.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w6/seed2.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w6/seed3.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/TG3/n300_w6/seed4.json
+  h_1b119f25eaf333 1
+beverage-ui/public/data/index.json
+  h_1b119f25eaf333 1
+beverage-ui/src/App.jsx
+  h_1b119f25eaf333 1-259
+beverage-ui/src/BeverageTown.jsx
+  h_1b119f25eaf333 1-290
+beverage-ui/src/main.jsx
+  h_1b119f25eaf333 1-9
+beverage-ui/vite.config.js
+  h_1b119f25eaf333 1-7
+calibrate_beverage.py
+  h_1b119f25eaf333 1-154
+competeai/agent/backends/__init__.py
+  h_1b119f25eaf333 16,24
+competeai/agent/backends/deepseek.py
+  h_1b119f25eaf333 1-134
+competeai/examples/beverage.yaml
+  h_1b119f25eaf333 1-62
+competeai/prompt_template/beverage/brand_system.txt
+  h_1b119f25eaf333 1-20
+competeai/prompt_template/beverage/daybook.txt
+  h_1b119f25eaf333 1-12
+competeai/scene/beverage.py
+  h_1b119f25eaf333 1-497
+docs/Beverage_Experiment_Design.md
+  h_1b119f25eaf333 1-210
+docs/Beverage_Experiment_Report.md
+  h_1b119f25eaf333 1-174
+docs/Beverage_Experiment_Report_白話版.md
+  h_1b119f25eaf333 1-141
+docs/CompeteAI_Coke_vs_Pepsi.md
+  h_1b119f25eaf333 1-174
+prepare_ui_data.py
+  h_1b119f25eaf333 1-149
+run_beverage.py
+  h_1b119f25eaf333 1-167
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "0a0c31f22e2b4345362a45eb960452c35fc36559",
+  "prompts": {},
+  "humans": {
+    "h_1b119f25eaf333": {
+      "author": "philipz <philipzheng@gmail.com>"
+    }
+  }
+}
