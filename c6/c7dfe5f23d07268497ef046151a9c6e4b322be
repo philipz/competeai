@@ -1,0 +1,14 @@
+beverage-ui/src/App.jsx
+  h_1b119f25eaf333 20-29,188,204,229-237
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "c6c7dfe5f23d07268497ef046151a9c6e4b322be",
+  "prompts": {},
+  "humans": {
+    "h_1b119f25eaf333": {
+      "author": "philipz <philipzheng@gmail.com>"
+    }
+  }
+}
